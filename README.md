@@ -2,8 +2,8 @@
 - 👀 I’m interested in software development,security and analysis
 - 🌱 I’m currently learning C++,C# and Java
 - 💞️ I’m looking to collaborate on project that will be also a chance for me to learn 
-- 📫 How to reach me 
-- 😄 Pronouns: ...
+- 📫 How to reach me on email at, talidavhana12@gmail.com
+- 😄 Pronouns: She/Her
 - ⚡ Fun fact: ...
 
 <!---
