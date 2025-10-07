@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OZYDE - Verify Your Email</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #111111, #333333);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .welcome {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #111111;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 30px;
+        }
+        .verification-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #111111, #333333);
+            color: #ffffff;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        .verification-btn:hover {
+            background: linear-gradient(135deg, #333333, #555555);
+            transform: translateY(-2px);
+        }
+        .alt-link {
+            font-size: 14px;
+            color: #777777;
+            margin-top: 20px;
+        }
+        .alt-link a {
+            color: #111111;
+            word-break: break-all;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+            border-top: 1px solid #eee;
+        }
+        .footer-content {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 15px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #777777;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 30px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0 10px;
+            }
+            .header, .content, .footer {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                OZYDE
+            </div>
+            <p style="margin: 0; opacity: 0.9;">Premium Dress Rental Experience</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h1 class="welcome">Welcome to OZYDE!</h1>
+            
+            <p class="message">
+                Hi {{USER_NAME}},<br><br>
+                Thank you for joining OZYDE, your premier destination for luxury dress rentals. 
+                We're excited to have you as part of our fashion-forward community!
+            </p>
+
+            <p class="message">
+                To complete your registration and access our exclusive collection, please verify your email address by clicking the button below:
+            </p>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="{{VERIFICATION_LINK}}" class="verification-btn">
+                    Verify My Email Address
+                </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <p style="font-size: 14px; color: #777777; margin-bottom: 10px;">
+                <strong>What's Next?</strong>
+            </p>
+            <ul style="font-size: 14px; color: #777777; padding-left: 20px;">
+                <li>Browse our curated collection of designer dresses</li>
+                <li>Book your perfect outfit for any occasion</li>
+                <li>Enjoy premium delivery and pickup services</li>
+                <li>Access exclusive member-only styles</li>
+            </ul>
+
+            <div class="alt-link">
+                <p><strong>Having trouble with the button?</strong></p>
+                <p>Copy and paste this link into your browser:<br>
+                <a href="{{VERIFICATION_LINK}}">{{VERIFICATION_LINK}}</a></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <strong>OZYDE Boutique</strong><br>
+                5 Liebenberg Rd, Noordwyk, Midrand 1687<br>
+                South Africa
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/ozyde_?igsh=NWM0aTd4ZGFmeHVr">Instagram</a>
+                <a href="https://www.tiktok.com/@ozyde_designs?_t=ZS-8zlyfPi8HHJ&_r=1">TikTok</a>
+                <a href="mailto:ozydedesigns@gmail.com">Email</a>
+            </div>
+
+            <p style="font-size: 12px; color: #999999; margin-top: 20px;">
+                This verification link will expire in 24 hours. If you didn't create an account with OZYDE, please ignore this email.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

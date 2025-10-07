@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registration Successful - OZYDE</title>
+    <style>
+        :root {
+            --bg: #fff;
+            --text: #222;
+            --muted: #7a7a7a;
+            --accent: #111;
+            --max-width: 1000px;
+            --success: #28a745;
+            --success-bg: #d4edda;
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+        
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px
+        }
+        
+        header {
+            border-bottom: 1px solid #eee;
+            background: #fff
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 600;
+            font-size: 16px
+        }
+        
+        .logo-box {
+            width: 44px;
+            height: 44px;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #bbb;
+            font-weight: 700
+        }
+        
+        .success-container {
+            max-width: 600px;
+            margin: 60px auto;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            color: white;
+            font-size: 40px;
+        }
+        
+        .success-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .success-message {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+        
+        .email-notice {
+            background: var(--success-bg);
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .resend-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .resend-form {
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .form-row input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .form-row button {
+            padding: 10px 16px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .form-row button:hover {
+            background: #333;
+        }
+        
+        .status-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .status-success {
+            background: var(--success-bg);
+            color: #155724;
+        }
+        
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        footer {
+            border-top: 1px solid #eee;
+            padding: 36px 0;
+            margin-top: 40px;
+            color: var(--muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo-box">✦</div>
+                <div>Ozyde</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="success-container">
+            <div class="success-icon">✓</div>
+            
+            <h1 class="success-title">Registration Successful!</h1>
+            
+            <p class="success-message">
+                Welcome to OZYDE! Your account has been created successfully.
+            </p>
+            
+            <div class="email-notice">
+                <strong>📧 Please check your email</strong><br>
+                We've sent a verification link to your email address. Click the link to verify your account and gain access to our exclusive dress collection.
+            </div>
+            
+            <div style="margin: 30px 0;">
+                <a href="catalog.html" class="btn btn-secondary">Browse Catalog</a>
+                <a href="register.html" class="btn btn-primary">Back to Login</a>
+            </div>
+
+            <div class="resend-section">
+                <p style="color: var(--muted); margin-bottom: 10px;">
+                    Didn't receive the email?
+                </p>
+                
+                <div class="resend-form">
+                    <div class="form-row">
+                        <input type="email" id="resendEmail" placeholder="Enter your email" required>
+                        <button onclick="resendVerification()" id="resendBtn">Resend Email</button>
+                    </div>
+                    <div id="statusMessage" class="status-message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OZYDE Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check if email was passed via URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        if (email) {
+            document.getElementById('resendEmail').value = decodeURIComponent(email);
+        }
+
+        async function resendVerification() {
+            const emailInput = document.getElementById('resendEmail');
+            const resendBtn = document.getElementById('resendBtn');
+            const statusDiv = document.getElementById('statusMessage');
+            
+            const email = emailInput.value.trim();
+            
+            if (!email) {
+                showStatus('Please enter your email address.', 'error');
+                return;
+            }
+            
+            // Disable button and show loading
+            resendBtn.disabled = true;
+            resendBtn.textContent = 'Sending...';
+            
+            try {
+                const response = await fetch('resend_verification.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'email=' + encodeURIComponent(email)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showStatus(result.message, 'success');
+                } else {
+                    showStatus(result.error || 'Failed to send verification email.', 'error');
+                }
+            } catch (error) {
+                showStatus('Network error. Please try again.', 'error');
+            } finally {
+                // Re-enable button
+                resendBtn.disabled = false;
+                resendBtn.textContent = 'Resend Email';
+            }
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('statusMessage');
+            statusDiv.textContent = message;
+            statusDiv.className = `status-message status-${type}`;
+            statusDiv.style.display = 'block';
+            
+            // Hide after 5 seconds
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Allow Enter key to trigger resend
+        document.getElementById('resendEmail').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                resendVerification();
+            }
+        });
+    </script>
+</body>
+</html>
